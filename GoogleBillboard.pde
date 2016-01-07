@@ -7,10 +7,22 @@ public void setup()
     noLoop();  
     double dNum = Double.parseDouble(digits);
     System.out.println(dNum);
-    if()
+
 }  
 public void draw()  
 {   
+	/*
+	for(int i = 0; i < e.length; i++){
+		if(e.isPrime == true){
+			System.out.printlm(dNum);
+			x++;
+
+			if(x > 10){
+				break;
+			}
+		}
+	}
+	*/
 	//not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
@@ -21,7 +33,7 @@ public boolean isPrime(double dNum)
 
   for(int i = 2; i <= Math.sqrt(dNum); i++){
     if(dNum % i == 0){
-      x = x + 1;
+      return false;
     }
   }
 
