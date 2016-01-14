@@ -1,17 +1,16 @@
 public final static String e = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059";  
-public double x;
-
-double dNum;
 
 public void setup()  
 {   noLoop();  
 
-    for(int i=0; i<10; i++){
+    for(int i=0; i<(e.length())-10; i++){
     	String digits = e.substring(i, i+10);
     	double dNum = Double.parseDouble(digits);
-    	System.out.println(dNum);
-    }     
 
+    	if(isPrime(dNum) == true){
+    		System.out.println(dNum);
+    	}
+    }     
 }  
 public void draw()  
 {   
